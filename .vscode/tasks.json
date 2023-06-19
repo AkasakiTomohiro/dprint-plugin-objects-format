@@ -1,0 +1,19 @@
+{
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "cargo release build",
+      "command": "cargo",
+      "args": ["build", "--target=wasm32-unknown-unknown", "--release"],
+      "problemMatcher": [
+        "$rustc"
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "fomat",
+      "command": "dprint",
+      "args": ["fmt"]
+    }
+  ]
+}
